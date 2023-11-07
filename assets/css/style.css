@@ -109,6 +109,7 @@
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
   }
   .banner2>.item>.card:hover{
     box-shadow: none;
@@ -132,6 +133,7 @@
     border-radius: 50px;
     border: 2px solid transparent;
     background-color: rgba(255, 255, 255,0.4);
+    cursor: pointer;
   }
   .banner2>.button>.btn:hover{
     border-top: 2px solid var(--white);
