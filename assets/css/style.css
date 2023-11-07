@@ -1,15 +1,20 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
 }
 
 :root {
     --pink: #ff6ebd;
     --yellow: #ffd760;
+    --orange: #ffa090;
     --white: #fff;
     --black: #000;
   }
+
+  /* HEADER CODE */
+
   header{
     display: flex;
     justify-content: end;
@@ -27,6 +32,9 @@
     display: inline-block;
     padding: 15px 25px;
   }
+  header>nav>ul>li:hover a{
+    color: #ff6ebd;
+  }
   header>nav>ul>li>a{
     text-decoration: none;
     color: var(--black);
@@ -42,9 +50,12 @@
     padding: 15px 5px 0px 0px;
     height: 20px;
   }
+
+  /* BANNER1 CODE */
   .banner1{
-    background: linear-gradient(to right, var(--pink) , var(--yellow));
-    height: 120vh;
+    background: linear-gradient(to right, var(--pink) ,var(--orange), var(--yellow));
+    height: 115vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
   .banner1>.bg-banner{
@@ -61,17 +72,22 @@
     padding: 35px 50px 35px 38px;
     color: var(--white);
   }
+  .banner1>.bg-banner>.lorem:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
   .banner1>.bg-banner>.lorem>h1{
     font-size: 45px;
     margin-bottom: 10px;
   }
   .banner1>.bg-banner>.lorem>p{
-    font-size: 17px;
+    font-size: 16px;
   }
 
+  /* BANNER 2 CODE */
   .banner2{
-    background: linear-gradient(to right, var(--pink) , var(--yellow));
-    margin-top: 20px;
+    background: linear-gradient(to right, var(--pink) ,var(--orange), var(--yellow));
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .banner2>h1{
     color: var(--white);
@@ -83,10 +99,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
   }
   .banner2>.item>.card{
-    width: 18%;
+    width: 20%;
     background-color: var(--white);
     text-align: center;
     padding: 20px;
@@ -94,12 +110,15 @@
     border-bottom-left-radius: 60px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  .banner2>.item>.card:hover{
+    box-shadow: none;
+  }
   .banner2>.item>.card>div>h3{
     margin: 10px auto;
   }
   .banner2>.item>.card>img{
     width: 100%;
-    height: 220px;
+    height: 240px;
     border-top-right-radius: 50px;
   }
   .banner2>.button{
@@ -109,8 +128,13 @@
     padding: 15px 60px;
     font-size: 20px;
     font-weight: bolder;
-    margin: 80px 0px;
+    margin: 80px 0px 100px 0px;
     border-radius: 50px;
-    border: none;
+    border: 2px solid transparent;
     background-color: rgba(255, 255, 255,0.4);
   }
+  .banner2>.button>.btn:hover{
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+  }
+  
